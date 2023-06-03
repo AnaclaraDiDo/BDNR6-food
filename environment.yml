@@ -1,0 +1,11 @@
+name: ./BDNR6
+channels:
+  - apple
+  - conda-forge
+dependencies:
+  - python=3.9.16
+  - pip=22.1.2
+  - pandas
+  - pip:
+
+prefix: ./BDNR6
