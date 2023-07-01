@@ -1,0 +1,34 @@
+{
+  "build": "12_2_0_hd922786_31",
+  "build_number": 31,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "constrains": [],
+  "depends": [
+    "libgfortran5"
+  ],
+  "extracted_package_dir": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libgfortran-5.0.0-12_2_0_hd922786_31",
+  "features": "",
+  "files": [],
+  "fn": "libgfortran-5.0.0-12_2_0_hd922786_31.conda",
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "license_family": "GPL",
+  "link": {
+    "source": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libgfortran-5.0.0-12_2_0_hd922786_31",
+    "type": 1
+  },
+  "md5": "dfc3dff1ce831c8e821f19d5d218825a",
+  "name": "libgfortran",
+  "package_tarball_full_path": "/opt/homebrew/Caskroom/miniforge/base/pkgs/libgfortran-5.0.0-12_2_0_hd922786_31.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "1abde945c2c7377aec9f2f648d9cc1fcb5f818a1e0caf53f8188b1182cbc1332",
+  "size": 160260,
+  "subdir": "osx-arm64",
+  "timestamp": 1678488316051,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/libgfortran-5.0.0-12_2_0_hd922786_31.conda",
+  "version": "5.0.0"
+}

@@ -1,0 +1,28 @@
+## Create relation Recipe -> Author
+CALL {
+MATCH (author:Author), (recipe:Recipe {AuthorId: author.AuthorId})
+CREATE (recipe)-[:CREATED_BY]->(author)
+} IN TRANSACTIONS OF 2 ROWS
+
+## Crear relation Recipe -> Ingredient
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/u/0/uc?id=1uS_QxgP6jAs3IeCnoWIG7mYyfMB98hbQ&export=download" AS row
+MATCH (recipe:Recipe {RecipeId: toInteger(row.RecipeId)})
+MERGE (i:Ingredient {Ingredient: row.Ingredient})
+MERGE (recipe)-[:INCLUDES]->(i)
+
+## Create relation Category -> Recipe
+MATCH (c:Category), (r:Recipe {RecipeCategory: c.RecipeCategory})
+CREATE (c)-[:HAS]->(r)
+
+## Create relation Recipe -> Nutrients
+LOAD CSV WITH HEADERS FROM "https://drive.google.com/u/0/uc?id=1vtIjaVBPsrepXYYYLSlYxugr6XzxdIBE&export=download" AS row
+MATCH (n:Nutrient {Nutrients: "FiberContent"}),(recipe:Recipe {RecipeId: toInteger(row.RecipeId)})
+MERGE (recipe)-[:CONTAINS {Amount: row.FiberContent}]->(n)
+
+<!-- Calories
+SaturatedFatContent
+SodiumContent
+CarbohydrateContent
+FiberContent
+SugarContent
+ProteinContent -->

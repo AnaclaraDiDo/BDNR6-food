@@ -1,0 +1,19 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/fernandorabago/Documents/Fing/BDNR/ProyectoFinal/BDNR6-food/BDNR6
+exec_prefix=/Users/fernandorabago/Documents/Fing/BDNR/ProyectoFinal/BDNR6-food/BDNR6
+libdir=/Users/fernandorabago/Documents/Fing/BDNR/ProyectoFinal/BDNR6-food/BDNR6/lib
+includedir=/Users/fernandorabago/Documents/Fing/BDNR/ProyectoFinal/BDNR6-food/BDNR6/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://tukaani.org/xz/
+Version: 5.2.6
+Cflags: -I${includedir}
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread
