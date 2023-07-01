@@ -11,4 +11,4 @@
 #### Update environment
  `conda env update --prefix ./BDNR6 -f environment.yml`
 
-#### [Web to search version of libraries](https://pypi.org/)
+#### [Datos utilizados obtenidos desde Kaggle](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews)
